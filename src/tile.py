@@ -17,5 +17,5 @@ big_tile.tiffsave(dir + '/large_tile.tif')
 
 for i in range(0, crop_square * 2 * tile_size, tile_size):
     for j in range(0, crop_square * 2 * tile_size, tile_size):
-        big_tile.crop(i, j, i + tile_size, j + tile_size).tiffsave(dir + f'/crop/{i},{j}.tif')
+        big_tile.crop(i, j, i + tile_size, j + tile_size).tiffsave(dir + f'/crops/{i},{j}.tif')
 
