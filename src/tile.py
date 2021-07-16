@@ -10,7 +10,7 @@ crop_square = 10
 tile_size = 256
 left, top = image.width // 2, image.height // 2
 left1, top1 = left - crop_square * tile_size, top - crop_square * tile_size
-left2, top2 = left + crop_square * tile_size, top - crop_square * tile_size
+left2, top2 = left + crop_square * tile_size, top + crop_square * tile_size
 
 big_tile = image.crop(left1, top1, left2 - left1, top2 - top1)
 big_tile.tiffsave(dir + 'large_tile.tif')
